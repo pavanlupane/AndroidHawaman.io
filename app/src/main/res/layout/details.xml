@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/moreDetailsTitle"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Details For Los Angeles, CA" />
+
+            <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@android:id/tabhost"
+                android:layout_below="@+id/moreDetailsTitle"
+                android:layout_alignStart="@+id/moreDetailsTitle">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        >
+                    </TabWidget>
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent">
+                    </FrameLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+
+            </TabHost>
+        </RelativeLayout>
+
+
+
+
+    <!--TableLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table1Id"
+        android:layout_below="@+id/tabcontent"
+        android:layout_alignStart="@+id/moreDetailsTitle">
+        <TableRow android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/timeTitleTextView"
+                android:text="Time"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/summaryTitleTextView"
+                android:text="Summary"
+                android:textSize="25dp"
+                android:layout_marginLeft="25dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/tempTitleTextView"
+                android:text="Summary"
+                android:textSize="25dp"
+                android:layout_marginLeft="25dp" />
+        </TableRow>
+
+
+
+    </TableLayout-->
+</RelativeLayout>

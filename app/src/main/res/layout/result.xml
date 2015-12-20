@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Details"
+        android:id="@+id/moreDetailsButton"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        android:onClick="launchDetailActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Map"
+        android:id="@+id/viewMapButton"
+        android:layout_alignTop="@+id/moreDetailsButton"
+        android:layout_toEndOf="@+id/moreDetailsButton"
+        android:textSize="17dp" />
+
+            <!--com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moreDetailsButton"
+                android:layout_alignStart="@+id/moreDetailsButton"
+                /-->
+
+
+
+    <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/fbImageButton"
+                 android:layout_alignTop="@+id/moreDetailsButton"
+                 android:layout_toEndOf="@+id/viewMapButton"
+                android:src="@drawable/fb_icon"
+                android:scaleType="fitCenter"
+        android:layout_marginLeft="20dp"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/moreDetailsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/summaryTitleTextView"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/temperatureTitleTextView"
+        android:layout_below="@+id/summaryTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="45dp" />
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/temperatureUnitTextView"
+                android:layout_below="@+id/summaryTitleTextView"
+                android:layout_toRightOf="@+id/temperatureTitleTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/lowHighTempTextView"
+        android:layout_below="@+id/temperatureTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="23dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precipitation"
+        android:id="@+id/precipitationTextView"
+        android:layout_below="@+id/lowHighTempTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="35dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/precipitationValueTextView"
+        android:layout_alignTop="@+id/precipitationTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="35dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chance of Rain"
+        android:id="@+id/chanceOfRainTextView"
+        android:layout_below="@+id/precipitationTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/chanceOfRainValueTextView"
+        android:layout_alignTop="@+id/chanceOfRainTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed"
+        android:id="@+id/windSpeedTextView"
+        android:layout_below="@+id/chanceOfRainTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/windSpeedValueTextView"
+        android:layout_alignTop="@+id/windSpeedTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dew Point"
+        android:id="@+id/dewPointTextView"
+        android:layout_below="@+id/windSpeedTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/dewPointValueTextView"
+        android:layout_alignTop="@+id/dewPointTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:id="@+id/humidityTextView"
+        android:layout_below="@+id/dewPointTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/humidityValueTextView"
+        android:layout_alignTop="@+id/humidityTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visibility"
+        android:id="@+id/visibilityTextView"
+        android:layout_below="@+id/humidityTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/visibilityValueTextView"
+        android:layout_alignTop="@+id/visibilityTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunrise"
+        android:id="@+id/sunriseTextView"
+        android:layout_below="@+id/visibilityTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/sunriseValueTextView"
+        android:layout_alignTop="@+id/sunriseTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunset"
+        android:id="@+id/sunsetTextView"
+        android:layout_below="@+id/sunriseTextView"
+        android:layout_alignStart="@+id/moreDetailsButton"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/sunsetValueTextView"
+        android:layout_alignTop="@+id/sunsetTextView"
+        android:layout_alignParentEnd="true"
+        android:textSize="22dp"
+        android:layout_marginRight="20dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

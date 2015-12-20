@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.pavanlupane.hawamanio" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".LaunchForm"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".aboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity android:name=".ResultActivity"
+            android:label="ResultActivity">
+        </activity>
+        <activity android:name=".detailsActivity"
+            android:label="detailsActivity">
+        </activity>
+        <activity android:name=".next24TabActivity"
+            android:label="next24TabActivity">
+        </activity>
+        <activity android:name=".next7TabActivity"
+            android:label="next7TabActivity">
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_map_key"/>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1234"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+        <activity android:name=".MapActivity">
+
+        </activity>
+    </application>
+
+</manifest>
